@@ -2,3 +2,5 @@ geopy
 folium 
 Django>=4.2
 djangorestframework>=3.15
+openai
+geopy >= 2.0

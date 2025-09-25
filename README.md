@@ -3,6 +3,11 @@
 Scape room by the current city (geolocalization) with relevant sites of interest. 
 This project has been create suin Django.
 
+## Requirements
+```
+pip install -r requirements.txt
+```
+
 ## Run project
 In console:
 ```
