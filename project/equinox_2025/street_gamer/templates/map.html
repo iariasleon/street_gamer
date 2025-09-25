@@ -10,6 +10,10 @@
     <h1>STREET GAMER</h1>
     <div class="container">
         <div id="map-container">
+                <form method="get">
+                    <input type="text" name="ciudad" placeholder="Escribe una ciudad" value="{{ ciudad }}">
+                    <button type="submit">Buscar</button>
+                </form>
             <div id="map">{{ map|safe }}</div>
             <button id="jugar-btn">JUGAR</button>
         </div>
