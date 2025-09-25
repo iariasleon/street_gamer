@@ -8,9 +8,9 @@ from street_gamer.utils.tools import read_json_from_file
 
 
 def map(request):
-    city = request.GET.get("ciudad", "merida extremadura")
+    city = request.GET.get("ciudad", "Jerez de los Caballeros")
     city_file = city.replace(",", "_").replace(" ", "_").lower()
-    points = read_json_from_file(f"street_gamer/cities/{city_file}.json")
+    points = read_json_from_file(f"street_gamer/cities/city_quiz_{city_file}.json")
     city = points["poblacion"]
     lat, lng = points["coordenadas"]["latitud"], points["coordenadas"]["longitud"]
 
