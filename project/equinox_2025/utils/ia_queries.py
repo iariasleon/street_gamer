@@ -73,7 +73,7 @@ def city_quiz_ia(lat, lon):
     city_quiz_json = json.loads(city_quiz)
     print(response.choices[0].message.content)
 
-    with open(f"../info_cities/city_quiz_{city_quiz_json['poblacion']}.json", "w") as f:
+    with open(f"../street_gamer/cities/city_quiz_{city_quiz_json['poblacion']}.json", "w") as f:
         f.write(city_quiz)
 
 
