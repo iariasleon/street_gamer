@@ -5,14 +5,15 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from geopy.geocoders import Nominatim
 
-from rest_framework import generics, permissions
 from .serializers import PlayerLocationSerializer, PlaceSerializer
 
 from django.utils import timezone
-from .models import PlayerPlaceStatus
-from .models import Place, PlayerLocation
+from .models import PlayerLocation, Place, PlayerPlaceStatus
+from rest_framework import generics, permissions, authentication
+from rest_framework.authentication import TokenAuthentication
 
-
+from django.shortcuts import render
+from rest_framework.response import Response
 
 # Listar todos los lugares (para mostrar retos)
 class PlaceListView(generics.ListAPIView):
@@ -56,24 +57,38 @@ def haversine(lat1, lon1, lat2, lon2):
 
 
 
-
 class PlayerLocationCreateView(generics.CreateAPIView):
     queryset = PlayerLocation.objects.all()
     serializer_class = PlayerLocationSerializer
+    authentication_classes = (TokenAuthentication,)
     permission_classes = [permissions.IsAuthenticated]
 
-    def perform_create(self, serializer):
-        # Guardar la ubicación
-        player_location = serializer.save(player=self.request.user)
+    def create(self, request, *args, **kwargs):
+        # Obtener serializer y validar
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
 
-        # Comprobar lugares
+        # Guardar ubicación
+        player_location = serializer.save(player=request.user)
+
+        # Comprobar lugares alcanzados
+        reached_places = []
         for place in Place.objects.all():
-            distance = haversine(player_location.latitude, player_location.longitude,
-                                 place.latitude, place.longitude)
-            if distance <= place.radius:
-                # marcar completado
+            dist = haversine(
+                player_location.latitude,
+                player_location.longitude,
+                place.latitude,
+                place.longitude
+            )
+            if dist <= place.radius:
+                reached_places.append({
+                    "place": place.name,
+                    "question": place.question,
+                    "distance_m": round(dist, 2)
+                })
+                # Guardar estado completado
                 status, created = PlayerPlaceStatus.objects.get_or_create(
-                    player=self.request.user,
+                    player=request.user,
                     place=place,
                     defaults={'completed': True, 'completed_at': timezone.now()}
                 )
@@ -81,3 +96,12 @@ class PlayerLocationCreateView(generics.CreateAPIView):
                     status.completed = True
                     status.completed_at = timezone.now()
                     status.save()
+
+        # Preparar respuesta
+        response_data = serializer.data
+        response_data["reached_places"] = reached_places
+        return Response(response_data)
+
+
+def geo_test_view(request):
+    return render(request, "geo_test.html")
