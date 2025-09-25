@@ -1,3 +1,5 @@
 geopy
 folium 
 Django
+openai
+geopy >= 2.0
