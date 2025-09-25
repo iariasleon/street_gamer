@@ -1,0 +1,105 @@
+{
+    "poblacion": "Zafra",
+    "lugares_interes": [
+        {
+            "nombre": "Castillo de Zafra",
+            "coordenadas": "38.891389, -6.327222",
+            "informacion": "Antiguo castillo de origen árabe situado en lo alto de una colina, famoso por su misteriosa forma de torreón. Se rumorea que inspiró la Torre de la Alegría en Juego de Tronos.",
+            "pregunta": "¿Cuál es la forma característica del Castillo de Zafra que lo hace tan peculiar?",
+            "respuestas": {
+                "respuesta_correcta": "Forma de torreón",
+                "respuestas_incorrectas": ["Forma de castillo tradicional", "Forma de fortaleza circular", "Forma de palacio renacentista", "Forma de pirámide escalonada", "Forma de laberinto"]
+            }
+        },
+        {
+            "nombre": "Plaza Grande",
+            "coordenadas": "38.425556, -6.411667",
+            "informacion": "Centro neurálgico de Zafra, rodeado de edificios históricos y con una impresionante fuente central. Lugar ideal para disfrutar de un café al aire libre.",
+            "pregunta": "¿Qué elemento destaca en el centro de la Plaza Grande de Zafra?",
+            "respuestas": {
+                "respuesta_correcta": "Fuente central",
+                "respuestas_incorrectas": ["Escultura de un león", "Monumento a un personaje histórico", "Reloj de sol gigante", "Pozo de los deseos", "Jardín de rosas"]
+            }
+        },
+        {
+            "nombre": "Iglesia de Candelaria",
+            "coordenadas": "38.426111, -6.412500",
+            "informacion": "Iglesia de estilo barroco construida en honor a la Virgen de la Candelaria. Destaca por su fachada ornamentada y su impresionante retablo mayor.",
+            "pregunta": "¿A quién está dedicada la Iglesia de Candelaria en Zafra?",
+            "respuestas": {
+                "respuesta_correcta": "Virgen de la Candelaria",
+                "respuestas_incorrectas": ["San Pedro", "Santa Bárbara", "San Sebastián", "Santa Lucía", "San Antonio"]
+            }
+        },
+        {
+            "nombre": "Parque de la Paz",
+            "coordenadas": "38.424167, -6.413611",
+            "informacion": "Amplio parque urbano con zonas verdes, juegos infantiles y senderos para pasear. Lugar ideal para relajarse y disfrutar de la naturaleza en el centro de la ciudad.",
+            "pregunta": "¿Qué tipo de zonas recreativas se pueden encontrar en el Parque de la Paz de Zafra?",
+            "respuestas": {
+                "respuesta_correcta": "Juegos infantiles",
+                "respuestas_incorrectas": ["Pistas de tenis", "Piscina olímpica", "Canchas de baloncesto", "Circuitos de skate", "Campos de golf"]
+            }
+        },
+        {
+            "nombre": "Museo Santa Clara",
+            "coordenadas": "38.426389, -6.414444",
+            "informacion": "Museo ubicado en el antiguo Convento de Santa Clara, que exhibe una colección de arte sacro y objetos históricos relacionados con la ciudad de Zafra.",
+            "pregunta": "¿Qué tipo de arte se puede encontrar principalmente en el Museo Santa Clara de Zafra?",
+            "respuestas": {
+                "respuesta_correcta": "Arte sacro",
+                "respuestas_incorrectas": ["Arte abstracto", "Arte contemporáneo", "Arte callejero", "Arte pop", "Arte cinético"]
+            }
+        },
+        {
+            "nombre": "Torre del Homenaje de Zafra",
+            "coordenadas": "38.426944, -6.414444",
+            "informacion": "Torre defensiva medieval que formaba parte de la muralla de Zafra. Ofrece unas vistas panorámicas impresionantes de la ciudad y sus alrededores.",
+            "pregunta": "¿Para qué se utilizaba principalmente la Torre del Homenaje en la época medieval?",
+            "respuestas": {
+                "respuesta_correcta": "Defensa militar",
+                "respuestas_incorrectas": ["Observatorio astronómico", "Centro de comunicaciones", "Refugio antiaéreo", "Escuela de esgrima", "Estudio de artistas"]
+            }
+        },
+        {
+            "nombre": "Palacio de los Duques de Feria",
+            "coordenadas": "38.426944, -6.417500",
+            "informacion": "Residencia noble renacentista que alberga la Oficina de Turismo de Zafra. Destaca por su fachada decorada y sus elegantes salones.",
+            "pregunta": "¿Qué título nobiliario ostentaban los antiguos propietarios del Palacio de los Duques de Feria en Zafra?",
+            "respuestas": {
+                "respuesta_correcta": "Duques",
+                "respuestas_incorrectas": ["Condes", "Marqueses", "Barones", "Príncipes", "Reyes"]
+            }
+        },
+        {
+            "nombre": "Teatro de Zafra",
+            "coordenadas": "38.426944, -6.416944",
+            "informacion": "Teatro histórico inaugurado en el siglo XIX, con una fachada de estilo neoclásico y una programación cultural variada que incluye obras de teatro, conciertos y eventos.",
+            "pregunta": "¿Qué estilo arquitectónico predomina en la fachada del Teatro de Zafra?",
+            "respuestas": {
+                "respuesta_correcta": "Neoclásico",
+                "respuestas_incorrectas": ["Barroco", "Gótico", "Renacentista", "Modernista", "Art Deco"]
+            }
+        },
+        {
+            "nombre": "Ermita de Belén",
+            "coordenadas": "38.426944, -6.420833",
+            "informacion": "Pequeña ermita situada en las afueras de Zafra, rodeada de naturaleza y con un ambiente tranquilo. Es un lugar de peregrinación para los devotos locales.",
+            "pregunta": "¿A quién está dedicada la Ermita de Belén en Zafra?",
+            "respuestas": {
+                "respuesta_correcta": "Virgen de Belén",
+                "respuestas_incorrectas": ["San José", "Santa Ana", "San Juan", "Santa Teresa", "San Francisco"]
+            }
+        },
+        {
+            "nombre": "Mercado de Abastos",
+            "coordenadas": "38.426944, -6.414444",
+            "informacion": "Mercado tradicional donde los lugareños compran productos frescos y locales. Es un lugar perfecto para degustar la gastronomía típica de la región.",
+            "pregunta": "¿Qué tipo de productos se pueden encontrar principalmente en el Mercado de Abastos de Zafra?",
+            "respuestas": {
+                "respuesta_correcta": "Productos frescos",
+                "respuestas_incorrectas": ["Ropa y complementos", "Electrodomésticos", "Artesanía local", "Libros y revistas", "Plantas y flores"]
+            }
+        }
+    ]
+}

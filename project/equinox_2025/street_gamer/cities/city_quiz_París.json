@@ -1,0 +1,135 @@
+{
+    "poblacion": "París",
+    "lugares_interes": [
+        {
+            "nombre": "Torre Eiffel",
+            "coordenadas": {
+                "latitud": 48.8584,
+                "longitud": 2.2945
+            },
+            "informacion": "La icónica Torre Eiffel es uno de los monumentos más reconocidos del mundo y un símbolo de París.",
+            "pregunta": "¿En qué año se inauguró la Torre Eiffel?",
+            "respuestas": {
+                "respuesta_correcta": 1889,
+                "respuestas_incorrectas": [1887, 1892, 1900, 1879, 1910]
+            }
+        },
+        {
+            "nombre": "Museo del Louvre",
+            "coordenadas": {
+                "latitud": 48.8606,
+                "longitud": 2.3376
+            },
+            "informacion": "El Louvre es uno de los museos más grandes y visitados del mundo, alberga obras maestras como la Mona Lisa de Leonardo da Vinci.",
+            "pregunta": "¿Cuántas obras de arte se exhiben aproximadamente en el Louvre?",
+            "respuestas": {
+                "respuesta_correcta": "aproximadamente 38,000",
+                "respuestas_incorrectas": ["aproximadamente 20,000", "aproximadamente 50,000", "aproximadamente 10,000", "aproximadamente 60,000", "aproximadamente 30,000"]
+            }
+        },
+        {
+            "nombre": "Catedral de Notre Dame",
+            "coordenadas": {
+                "latitud": 48.8530,
+                "longitud": 2.3499
+            },
+            "informacion": "La Catedral de Notre Dame es un impresionante ejemplo de arquitectura gótica y uno de los monumentos más emblemáticos de París.",
+            "pregunta": "¿En qué año se inició la construcción de la Catedral de Notre Dame?",
+            "respuestas": {
+                "respuesta_correcta": 1163,
+                "respuestas_incorrectas": [1200, 1100, 1250, 1000, 1300]
+            }
+        },
+        {
+            "nombre": "Jardines de Luxemburgo",
+            "coordenadas": {
+                "latitud": 48.8462,
+                "longitud": 2.3372
+            },
+            "informacion": "Estos hermosos jardines son un remanso de paz en el corazón de París, perfectos para relajarse y pasear.",
+            "pregunta": "¿Cuál es el nombre completo de los Jardines de Luxemburgo en francés?",
+            "respuestas": {
+                "respuesta_correcta": "Jardin du Luxembourg",
+                "respuestas_incorrectas": ["Parc de Luxembourg", "Jardin des Fleurs", "Jardin de la Paix", "Jardin des Plantes", "Parc du Soleil"]
+            }
+        },
+        {
+            "nombre": "Arco del Triunfo",
+            "coordenadas": {
+                "latitud": 48.8738,
+                "longitud": 2.2950
+            },
+            "informacion": "El imponente Arco del Triunfo, construido por orden de Napoleón, ofrece vistas panorámicas de París desde su terraza.",
+            "pregunta": "¿Cuántas avenidas convergen en el Arco del Triunfo?",
+            "respuestas": {
+                "respuesta_correcta": 12,
+                "respuestas_incorrectas": [8, 10, 15, 20, 5]
+            }
+        },
+        {
+            "nombre": "Plaza de la Concordia",
+            "coordenadas": {
+                "latitud": 48.8656,
+                "longitud": 2.3216
+            },
+            "informacion": "Esta histórica plaza de París es famosa por su obelisco egipcio y por haber sido escenario de importantes eventos a lo largo de la historia.",
+            "pregunta": "¿Cuál es el nombre original de la Plaza de la Concordia?",
+            "respuestas": {
+                "respuesta_correcta": "Place Louis XV",
+                "respuestas_incorrectas": ["Place de la Revolution", "Place de la Liberté", "Place de la Paix", "Place de la République", "Place de la Victoire"]
+            }
+        },
+        {
+            "nombre": "Barrio de Montmartre",
+            "coordenadas": {
+                "latitud": 48.8867,
+                "longitud": 2.3431
+            },
+            "informacion": "Montmartre es conocido por su encanto bohemio, sus calles empedradas y la icónica Basílica del Sagrado Corazón en la cima de la colina.",
+            "pregunta": "¿Qué famoso artista vivió y trabajó en Montmartre durante un período de su vida?",
+            "respuestas": {
+                "respuesta_correcta": "Pablo Picasso",
+                "respuestas_incorrectas": ["Vincent van Gogh", "Claude Monet", "Henri de Toulouse-Lautrec", "Edgar Degas", "Édouard Manet"]
+            }
+        },
+        {
+            "nombre": "Barco Mouche por el río Sena",
+            "coordenadas": {
+                "latitud": 48.8610,
+                "longitud": 2.3231
+            },
+            "informacion": "Un paseo en barco Mouche por el Sena ofrece una vista única de los principales monumentos de París desde el agua.",
+            "pregunta": "¿Qué significa 'Mouche' en francés en este contexto?",
+            "respuestas": {
+                "respuesta_correcta": "Mosca",
+                "respuestas_incorrectas": ["Barco", "Rápido", "Flotante", "Navegante", "Velero"]
+            }
+        },
+        {
+            "nombre": "Ópera Garnier",
+            "coordenadas": {
+                "latitud": 48.8718,
+                "longitud": 2.3314
+            },
+            "informacion": "El majestuoso edificio de la Ópera Garnier es una obra maestra arquitectónica que alberga espectaculares representaciones operísticas.",
+            "pregunta": "¿Quién fue el arquitecto principal detrás del diseño de la Ópera Garnier?",
+            "respuestas": {
+                "respuesta_correcta": "Charles Garnier",
+                "respuestas_incorrectas": ["Gustave Eiffel", "Claude Monet", "Hector Guimard", "Le Corbusier", "Antoni Gaudí"]
+            }
+        },
+        {
+            "nombre": "Museo de Orsay",
+            "coordenadas": {
+                "latitud": 48.8599,
+                "longitud": 2.3266
+            },
+            "informacion": "Ubicado en una antigua estación de tren, el Museo de Orsay alberga una impresionante colección de arte impresionista y postimpresionista.",
+            "pregunta": "¿Qué artista no está representado en las colecciones del Museo de Orsay?",
+            "respuestas": {
+                "respuesta_correcta": "Vincent van Gogh",
+                "respuestas_incorrectas": ["Claude Monet", "Edgar Degas", "Paul Cézanne", "Pierre-Auguste Renoir", "Camille Pissarro"]
+            }
+        }
+    ]
+}
