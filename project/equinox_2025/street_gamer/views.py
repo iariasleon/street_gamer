@@ -1,10 +1,6 @@
 import folium
 import math
 
-from django.shortcuts import render
-from django.http import HttpResponse
-from geopy.geocoders import Nominatim
-
 from .serializers import PlayerLocationSerializer, PlaceSerializer
 
 from django.utils import timezone
@@ -110,5 +106,3 @@ class PlayerLocationCreateView(generics.CreateAPIView):
         return Response(response_data)
 
 
-def geo_test_view(request):
-    return render(request, "geo_test.html")
