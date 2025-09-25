@@ -10,8 +10,8 @@ def read_json_from_file(path):
     """
     file = Path(path)
     if not file.is_file():
-        raise IOError(f" ERROR - file {path} could not be found")
+        raise IOError(f"File {path} could not be found")
     try:
         return json.loads(file.read_text(encoding="utf8"))
     except ValueError as error:
-        raise ValueError(f" ERROR - decoding file {path} to JSON failed") from error
+        raise ValueError(f"Decoding file {path} to JSON failed") from error

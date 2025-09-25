@@ -20,7 +20,6 @@ def map(request):
 
     # add points
     for p in points["lugares_interes"]:
-        print(p["coordenadas"])
         folium.Marker(
             [p["coordenadas"]["latitud"], p["coordenadas"]["longitud"]],
             popup=p["nombre"],
