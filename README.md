@@ -1,1 +1,1 @@
-### Stret Gamer
+### Street Gamer
