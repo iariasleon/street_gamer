@@ -4,67 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mapa</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .container {
-            display: flex;
-            gap: 20px;
-        }
-
-        #map-container {
-            flex: 1;
-            height: 100%;
-            max-width: 100%;
-            position: relative;
-            box-sizing: border-box;
-            display: flex; /* Habilita flexbox */
-            flex-direction: column; /* Coloca el botón debajo del mapa */
-            align-items: center; /* Centra el contenido horizontalmente */
-        }
-
-        #map {
-            height: 100%;
-            width: 100%; /* Ajusta el ancho al contenedor */
-            border: 5px solid #000; /* Borde negro visible */
-            border-radius: 10px; /* Mantén las esquinas redondeadas */
-            box-sizing: border-box; /* Incluye el borde dentro del tamaño total */
-            margin: 0; /* Elimina márgenes externos */
-            padding: 0; /* Elimina relleno interno */
-            display: block; /* Asegura que el mapa sea un bloque completo */
-        }
-
-        #preguntas-container {
-            flex: 1;
-        }
-
-        #preguntas {
-            display: none;
-            margin-top: 20px;
-        }
-
-        button {
-            margin-top: 40px; /* Aumenta el margen superior para mover el botón más abajo */
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
     <h1>STREET GAMER</h1>
@@ -80,7 +20,6 @@
             </div>
         </div>
     </div>
-
     <script>
         const boton = document.getElementById('jugar-btn');
         const preguntasDiv = document.getElementById('preguntas');
@@ -130,7 +69,7 @@
                     label.style.display = 'block';
                     const checkbox = document.createElement('input');
                     checkbox.type = 'radio';
-                    checkbox.name = `pregunta-${index}`; // Asegura que solo se pueda marcar una opción por pregunta
+                    checkbox.name = `pregunta-${index}`;
                     checkbox.value = opcion;
                     label.appendChild(checkbox);
                     label.appendChild(document.createTextNode(opcion));
@@ -144,9 +83,9 @@
                     const seleccionada = document.querySelector(`input[name="pregunta-${index}"]:checked`);
                     if (seleccionada) {
                         if (seleccionada.value === respuestasCorrectas[index]) {
-                            img.src = "/static/images/ok.png"; // Cambia el logo a ok.png
+                            img.src = "/static/images/ok.png";
                         } else {
-                            img.src = "/static/images/ko.png"; // Cambia el logo a ko.png
+                            img.src = "/static/images/ko.png";
                         }
                     } else {
                         alert("Por favor, selecciona una opción antes de comprobar.");
