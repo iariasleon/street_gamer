@@ -1,0 +1,80 @@
+{
+  "poblacion": "Mérida, Extremadura, España",
+  "coordenadas": {
+    "latitud": 38.9170,
+    "longitud": -6.3437
+  },
+  "lugares_interes": [
+    {
+      "nombre": "Teatro Romano de Mérida",
+      "coordenadas": { "latitud": 38.9161, "longitud": -6.3384 },
+      "informacion": "Construido en el siglo I a.C. por orden de Agripa, es uno de los teatros romanos mejor conservados del mundo y todavía hoy acoge festivales de teatro clásico.",
+      "pregunta": "¿Cuántos espectadores cabían originalmente en el Teatro Romano?",
+      "respuesta": "Aproximadamente 6.000."
+    },
+    {
+      "nombre": "Anfiteatro Romano",
+      "coordenadas": { "latitud": 38.9157, "longitud": -6.3393 },
+      "informacion": "Inaugurado en el año 8 a.C., era el lugar donde se celebraban luchas de gladiadores y espectáculos.",
+      "pregunta": "¿Qué forma tiene el Anfiteatro visto desde arriba?",
+      "respuesta": "Una elipse."
+    },
+    {
+      "nombre": "Templo de Diana",
+      "coordenadas": { "latitud": 38.9183, "longitud": -6.3450 },
+      "informacion": "Monumento religioso del siglo I d.C. dedicado al culto imperial. Sus columnas corintias lo hacen muy característico.",
+      "pregunta": "¿De qué material están hechas las columnas del Templo de Diana?",
+      "respuesta": "De granito local."
+    },
+    {
+      "nombre": "Puente Romano sobre el Guadiana",
+      "coordenadas": { "latitud": 38.9185, "longitud": -6.3401 },
+      "informacion": "Con más de 60 arcos y casi 800 metros, fue uno de los puentes más largos del mundo romano.",
+      "pregunta": "¿Cuántos arcos tenía originalmente el Puente Romano?",
+      "respuesta": "64 arcos."
+    },
+    {
+      "nombre": "Circo Romano",
+      "coordenadas": { "latitud": 38.9150, "longitud": -6.3540 },
+      "informacion": "Espacio dedicado a las carreras de cuadrigas, con una capacidad de unos 30.000 espectadores.",
+      "pregunta": "¿Qué tipo de competiciones se celebraban aquí?",
+      "respuesta": "Carreras de carros tirados por caballos (cuadrigas)."
+    },
+    {
+      "nombre": "Alcazaba Árabe",
+      "coordenadas": { "latitud": 38.9182, "longitud": -6.3396 },
+      "informacion": "Fortaleza musulmana construida en 835 por Abderramán II para controlar el puente romano.",
+      "pregunta": "¿Qué elemento defensivo destaca en la Alcazaba?",
+      "respuesta": "Su gran aljibe subterráneo para almacenar agua."
+    },
+    {
+      "nombre": "Basílica de Santa Eulalia",
+      "coordenadas": { "latitud": 38.9200, "longitud": -6.3455 },
+      "informacion": "Iglesia del siglo IV, una de las primeras de la Hispania cristiana, dedicada a la mártir Santa Eulalia.",
+      "pregunta": "¿Qué símbolo aparece en la cripta de la basílica?",
+      "respuesta": "La cruz de la mártir Eulalia."
+    },
+    {
+      "nombre": "Museo Nacional de Arte Romano",
+      "coordenadas": { "latitud": 38.9168, "longitud": -6.3404 },
+      "informacion": "Obra de Rafael Moneo, alberga una de las mejores colecciones de mosaicos y esculturas romanas de España.",
+      "pregunta": "¿Qué material domina en la arquitectura del edificio?",
+      "respuesta": "El ladrillo."
+    },
+    {
+      "nombre": "Acueducto de los Milagros",
+      "coordenadas": { "latitud": 38.9255, "longitud": -6.3438 },
+      "informacion": "Restos espectaculares de un acueducto romano que abastecía de agua a la ciudad desde el embalse de Proserpina.",
+      "pregunta": "¿Qué altura alcanzan las arcadas más altas del Acueducto?",
+      "respuesta": "Hasta 25 metros."
+    },
+    {
+      "nombre": "Embalse de Proserpina",
+      "coordenadas": { "latitud": 38.9555, "longitud": -6.3720 },
+      "informacion": "Antiguo embalse romano que aún se utiliza, declarado Patrimonio de la Humanidad.",
+      "pregunta": "¿Cuál era la función principal de este embalse?",
+      "respuesta": "Abastecer de agua a la ciudad de Mérida."
+    }
+  ]
+}
+ 
