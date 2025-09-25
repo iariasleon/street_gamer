@@ -1,0 +1,149 @@
+{
+    "poblacion": "Jerez de los Caballeros",
+    "coordenadas": {
+        "latitud": 38.3187,
+        "longitud": -6.771
+    },
+    "lugares_interes": [
+        {
+            "nombre": "Castillo de Jerez de los Caballeros",
+            "coordenadas": { "latitud": 38.3188, "longitud": -6.7711 },
+            "informacion": "Antigua fortaleza medieval con vistas panorámicas.",
+            "pregunta": "¿Qué rey español mandó construir este castillo en el siglo XIII?",
+            "respuestas": {
+                "respuesta_correcta": "Alfonso IX de León",
+                "respuestas_incorrectas": [
+                    "Fernando III de Castilla",
+                    "Jaime I de Aragón",
+                    "Isabel la Católica"
+                ]
+            }
+        },
+        {
+            "nombre": "Plaza de España",
+            "coordenadas": { "latitud": 38.3186, "longitud": -6.7709 },
+            "informacion": "Centro neurálgico de la ciudad con arquitectura tradicional.",
+            "pregunta": "¿Qué evento popular se celebra en esta plaza cada año en mayo?",
+            "respuestas": {
+                "respuesta_correcta": "Feria del Caballo",
+                "respuestas_incorrectas": [
+                    "Carnaval",
+                    "Semana Santa",
+                    "Festival de Flamenco"
+                ]
+            }
+        },
+        {
+            "nombre": "Iglesia de San Bartolomé",
+            "coordenadas": { "latitud": 38.3192, "longitud": -6.7705 },
+            "informacion": "Templo gótico con elementos mudéjares.",
+            "pregunta": "¿A qué santo está dedicada esta iglesia?",
+            "respuestas": {
+                "respuesta_correcta": "San Bartolomé",
+                "respuestas_incorrectas": [
+                    "San Pedro",
+                    "San Juan",
+                    "Santa María"
+                ]
+            }
+        },
+        {
+            "nombre": "Museo Etnográfico de Jerez de los Caballeros",
+            "coordenadas": { "latitud": 38.3179, "longitud": -6.7722 },
+            "informacion": "Exhibe la historia y tradiciones de la región.",
+            "pregunta": "¿Qué objeto típico de la zona se puede encontrar en este museo?",
+            "respuestas": {
+                "respuesta_correcta": "Tamboril",
+                "respuestas_incorrectas": [
+                    "Abanico",
+                    "Mantón de Manila",
+                    "Guitarra flamenca"
+                ]
+            }
+        },
+        {
+            "nombre": "Convento de San Agustín",
+            "coordenadas": { "latitud": 38.3203, "longitud": -6.7695 },
+            "informacion": "Edificio religioso con claustro de estilo renacentista.",
+            "pregunta": "¿Qué orden religiosa fundó este convento en el siglo XVI?",
+            "respuestas": {
+                "respuesta_correcta": "Orden de San Agustín",
+                "respuestas_incorrectas": [
+                    "Orden de los Franciscanos",
+                    "Orden de los Dominicos",
+                    "Orden de los Jesuitas"
+                ]
+            }
+        },
+        {
+            "nombre": "Fuente del Cano",
+            "coordenadas": { "latitud": 38.3195, "longitud": -6.7716 },
+            "informacion": "Fuente renacentista con leyendas locales.",
+            "pregunta": "¿Qué figura mitológica adorna el centro de esta fuente?",
+            "respuestas": {
+                "respuesta_correcta": "Neptuno",
+                "respuestas_incorrectas": [
+                    "Apolo",
+                    "Hércules",
+                    "Venus"
+                ]
+            }
+        },
+        {
+            "nombre": "Ermita de la Soledad",
+            "coordenadas": { "latitud": 38.3209, "longitud": -6.7689 },
+            "informacion": "Ermita barroca con procesiones tradicionales.",
+            "pregunta": "¿En qué festividad se lleva a cabo la procesión de la Virgen de la Soledad?",
+            "respuestas": {
+                "respuesta_correcta": "Viernes Santo",
+                "respuestas_incorrectas": [
+                    "Día de la Inmaculada",
+                    "Domingo de Resurrección",
+                    "Fiesta de la Virgen del Carmen"
+                ]
+            }
+        },
+        {
+            "nombre": "Ruta de los Templarios",
+            "coordenadas": { "latitud": 38.318, "longitud": -6.773 },
+            "informacion": "Sendero que recorre lugares vinculados a la Orden del Temple.",
+            "pregunta": "¿En qué siglo estuvo presente la Orden del Temple en Jerez de los Caballeros?",
+            "respuestas": {
+                "respuesta_correcta": "Siglo XIII",
+                "respuestas_incorrectas": [
+                    "Siglo X",
+                    "Siglo XV",
+                    "Siglo XVII"
+                ]
+            }
+        },
+        {
+            "nombre": "Teatro Carolina Coronado",
+            "coordenadas": { "latitud": 38.3198, "longitud": -6.7701 },
+            "informacion": "Escenario cultural con programación variada.",
+            "pregunta": "¿A qué famosa escritora nacida en Jerez de los Caballeros homenajea este teatro?",
+            "respuestas": {
+                "respuesta_correcta": "Carolina Coronado",
+                "respuestas_incorrectas": [
+                    "Gloria Fuertes",
+                    "Rosalía de Castro",
+                    "Emilia Pardo Bazán"
+                ]
+            }
+        },
+        {
+            "nombre": "Parque Periurbano de Valuengo",
+            "coordenadas": { "latitud": 38.3215, "longitud": -6.7664 },
+            "informacion": "Área natural para actividades al aire libre.",
+            "pregunta": "¿Qué río atraviesa este parque periurbano?",
+            "respuestas": {
+                "respuesta_correcta": "Río Ardila",
+                "respuestas_incorrectas": [
+                    "Río Guadiana",
+                    "Río Tajo",
+                    "Río Guadalquivir"
+                ]
+            }
+        }
+    ]
+}
