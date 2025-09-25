@@ -5,14 +5,14 @@ from django.http import HttpResponse
 from geopy.geocoders import Nominatim
 
 
-def mapa(request):
+def map(request):
     city = request.GET.get("ciudad", "Madrid")
-    geolocator = Nominatim(user_agent="mi_app_mapas")
+    geolocator = Nominatim(user_agent="mi_app_map")
 
     try:
         location = geolocator.geocode(city)
         lat, lng = location.latitude, location.longitude
-    except:
+    except Exception:
         city = "Madrid"
         lat, lng = 40.4165, -3.70256
 
@@ -22,4 +22,4 @@ def mapa(request):
 
 
     m = m._repr_html_()
-    return render(request, "map.html", {"mapa": m, "ciudad": city})
+    return render(request, "map.html", {"map": m, "ciudad": city})
