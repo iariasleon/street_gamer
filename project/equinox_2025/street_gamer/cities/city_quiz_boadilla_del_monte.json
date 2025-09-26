@@ -1,0 +1,163 @@
+{
+  "poblacion": "Boadilla del Monte",
+  "coordenadas": {
+    "latitud": 40.3988,
+    "longitud": -3.8891
+  },
+  "lugares_interes": [
+    {
+      "nombre": "Palacio del Infante Don Luis",
+      "coordenadas": { "latitud": 40.4141, "longitud": -3.8785 },
+      "informacion": "Antiguo palacio del siglo XVIII con jardines y fuentes.",
+      "pregunta": "¿Qué miembro de la realeza mandó construir este palacio?",
+      "respuestas": {
+        "respuesta_correcta": "El Infante Don Luis",
+        "respuestas_incorrectas": [
+          "Rey Carlos III",
+          "Reina María Luisa",
+          "Duque de Alba"
+        ]
+      }
+    },
+    {
+      "nombre": "Parque de la Fuente de las Lágrimas",
+      "coordenadas": { "latitud": 40.4087, "longitud": -3.8785 },
+      "informacion": "Parque con una fuente rodeada de historia y leyendas locales.",
+      "pregunta": "¿Por qué se llama Fuente de las Lágrimas?",
+      "respuestas": {
+        "respuesta_correcta": "Por una antigua leyenda de amor",
+        "respuestas_incorrectas": [
+          "Porque siempre está mojada",
+          "Por un milagro religioso",
+          "Porque fue construida por lágrimas reales"
+        ]
+      }
+    },
+    {
+      "nombre": "Iglesia de San Cristóbal",
+      "coordenadas": { "latitud": 40.4081, "longitud": -3.8740 },
+      "informacion": "Iglesia histórica con una torre mudéjar.",
+      "pregunta": "¿Qué estilo arquitectónico predomina en esta iglesia?",
+      "respuestas": {
+        "respuesta_correcta": "Mudéjar",
+        "respuestas_incorrectas": [
+          "Barroco",
+          "Gótico",
+          "Renacentista"
+        ]
+      }
+    },
+    {
+      "nombre": "Casa de la Juventud",
+      "coordenadas": { "latitud": 40.4052, "longitud": -3.8774 },
+      "informacion": "Lugar de encuentro para actividades culturales y deportivas.",
+      "pregunta": "¿Qué tipo de eventos se realizan en este lugar?",
+      "respuestas": {
+        "respuesta_correcta": "Actividades culturales y deportivas",
+        "respuestas_incorrectas": [
+          "Conciertos de música",
+          "Exhibiciones de arte",
+          "Reuniones políticas"
+        ]
+      }
+    },
+    {
+      "nombre": "Ermita de Nuestra Señora de la Antigua",
+      "coordenadas": { "latitud": 40.4043, "longitud": -3.8822 },
+      "informacion": "Ermita con una imagen mariana venerada por los habitantes locales.",
+      "pregunta": "¿A quién está dedicada la ermita?",
+      "respuestas": {
+        "respuesta_correcta": "A Nuestra Señora de la Antigua",
+        "respuestas_incorrectas": [
+          "A San Cristóbal",
+          "A San Juan",
+          "A la Virgen del Rocío"
+        ]
+      }
+    },
+    {
+      "nombre": "Parque Empresarial Prado del Espino",
+      "coordenadas": { "latitud": 40.4017, "longitud": -3.8935 },
+      "informacion": "Zona industrial y empresarial donde se ubican diversas empresas y comercios.",
+      "pregunta": "¿Qué tipo de negocios predominan en este parque?",
+      "respuestas": {
+        "respuesta_correcta": "Empresas y comercios",
+        "respuestas_incorrectas": [
+          "Restaurantes exclusivos",
+          "Tiendas de moda",
+          "Escuelas de arte"
+        ]
+      }
+    },
+    {
+      "nombre": "Centro Comercial Gran Plaza 2",
+      "coordenadas": { "latitud": 40.3933, "longitud": -3.8856 },
+      "informacion": "Gran centro comercial con tiendas, restaurantes y cines.",
+      "pregunta": "¿Cuántas salas de cine tiene el centro comercial?",
+      "respuestas": {
+        "respuesta_correcta": "9 salas de cine",
+        "respuestas_incorrectas": [
+          "5 salas de cine",
+          "12 salas de cine",
+          "15 salas de cine"
+        ]
+      }
+    },
+    {
+      "nombre": "Bosque Sur",
+      "coordenadas": { "latitud": 40.3969, "longitud": -3.8945 },
+      "informacion": "Amplia zona verde con senderos para caminar y áreas de recreo.",
+      "pregunta": "¿Qué tipo de árboles predominan en este bosque?",
+      "respuestas": {
+        "respuesta_correcta": "Robles y pinos",
+        "respuestas_incorrectas": [
+          "Palmeras y cipreses",
+          "Olivos y naranjos",
+          "Arce y abeto"
+        ]
+      }
+    },
+    {
+      "nombre": "Parque de Boadilla",
+      "coordenadas": { "latitud": 40.3946, "longitud": -3.8840 },
+      "informacion": "Parque urbano con zonas verdes, juegos infantiles y pistas deportivas.",
+      "pregunta": "¿Qué río atraviesa este parque?",
+      "respuestas": {
+        "respuesta_correcta": "Arroyo de la Fresneda",
+        "respuestas_incorrectas": [
+          "Río Manzanares",
+          "Río Jarama",
+          "Río Tajo"
+        ]
+      }
+    },
+    {
+      "nombre": "Casa de la Cultura de Boadilla del Monte",
+      "coordenadas": { "latitud": 40.4053, "longitud": -3.8697 },
+      "informacion": "Espacio cultural que alberga exposiciones, conciertos y eventos artísticos.",
+      "pregunta": "¿Qué actividades culturales se realizan con mayor frecuencia en este lugar?",
+      "respuestas": {
+        "respuesta_correcta": "Exposiciones y conciertos",
+        "respuestas_incorrectas": [
+          "Obras de teatro",
+          "Talleres de cocina",
+          "Clases de baile"
+        ]
+      }
+    },
+    {
+      "nombre": "Cerro de San Babilés",
+      "coordenadas": { "latitud": 40.3949, "longitud": -3.9017 },
+      "informacion": "Colina con vistas panorámicas de Boadilla del Monte y sus alrededores.",
+      "pregunta": "¿Qué se puede divisar desde la cima del cerro?",
+      "respuestas": {
+        "respuesta_correcta": "Vistas de Boadilla del Monte y áreas circundantes",
+        "respuestas_incorrectas": [
+          "Nada, solo árboles",
+          "El mar Mediterráneo",
+          "La ciudad de Madrid"
+        ]
+      }
+    }
+  ]
+}
