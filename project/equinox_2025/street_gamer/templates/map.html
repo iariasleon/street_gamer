@@ -22,7 +22,24 @@
         <div id="preguntas-container">
             <div id="preguntas">
                 <h2>Preguntas:</h2>
-                <ul id="lista-preguntas"></ul>
+                <form method="post" action="/submit-answers/">
+                    {% csrf_token %}
+                    {% for question in questions %}
+                        <div>
+                            <p>
+                                <strong>{{ question.pregunta }}</strong>
+                                <img src="/static/images/interrogacion.jpg" alt="?" style="width: 16px; height: 16px; vertical-align: middle;">
+                            </p>
+                            {% for opcion in question.opciones %}
+                                <label>
+                                    <input type="radio" name="question" value="{{ opcion }}">
+                                    {{ opcion }}
+                                </label><br>
+                            {% endfor %}
+                        </div>
+                    {% endfor %}
+                    <button type="submit">Comprobar</button>
+                </form>
             </div>
         </div>
     </div>
@@ -31,30 +48,6 @@
         const boton = document.getElementById('jugar-btn');
         const preguntasDiv = document.getElementById('preguntas');
         const listaPreguntas = document.getElementById('lista-preguntas');
-        const preguntas = [
-            "¿Cuál es el nombre del estadio principal de fútbol en Madrid?",
-            "¿Qué famoso museo se encuentra en Madrid y forma parte del Triángulo del Arte?",
-            "¿Cómo se llama la plaza central más conocida de Madrid?",
-            "¿Qué río atraviesa la ciudad de Madrid?",
-            "¿Cuál es el nombre del parque más grande de Madrid?"
-        ];
-
-        const opciones = [
-            ["Santiago Bernabéu", "Wanda Metropolitano", "Vicente Calderón"],
-            ["Museo del Prado", "Museo Reina Sofía", "Museo Thyssen-Bornemisza"],
-            ["Puerta del Sol", "Plaza Mayor", "Plaza de España"],
-            ["Río Manzanares", "Río Tajo", "Río Jarama"],
-            ["Parque del Retiro", "Casa de Campo", "Parque Juan Carlos I"]
-        ];
-
-        const respuestasCorrectas = [
-            "Santiago Bernabéu",
-            "Museo del Prado",
-            "Plaza Mayor",
-            "Río Manzanares",
-            "Parque del Retiro"
-        ];
-
         document.getElementById("sendLocation").addEventListener("click", () => {
             if (!navigator.geolocation) {
                 alert("Tu navegador no soporta geolocalización");
