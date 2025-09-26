@@ -11,13 +11,10 @@
     <div class="container">
         <div id="map-container">
                 <form method="get">
-                    <input type="text" name="ciudad" placeholder="Escribe una ciudad" value="{{ ciudad }}">
-                    <button type="submit">Buscar</button>
+                    <input type="text" name="ciudad" placeholder="Escribe una ciudad" value="{{ ciudad }}">                   
                 </form>
             <div id="map">{{ map|safe }}</div>
             <button id="jugar-btn">JUGAR</button>
-            <button id="sendLocation">Comprobar mi ubicación</button>
-            <div id="result" style="margin-top: 20px;"> </div>
         </div>
         <div id="preguntas-container">
             <div id="preguntas">
@@ -44,108 +41,61 @@
         </div>
     </div>
     <script>
-        const token = "8390af118ee15edeeb60a854b20d9a1200df42ea"; // reemplazar token
-        const boton = document.getElementById('jugar-btn');
-        const preguntasDiv = document.getElementById('preguntas');
-        const listaPreguntas = document.getElementById('lista-preguntas');
-        document.getElementById("sendLocation").addEventListener("click", () => {
-            if (!navigator.geolocation) {
-                alert("Tu navegador no soporta geolocalización");
-                return;
-            }
-
+        window.onload = function() {
+        if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(
-                position => {
-                    const data = {
-                        latitude: position.coords.latitude,
-                        longitude: position.coords.longitude
-                    };
+            function(position) {
+                const lat = position.coords.latitude;
+                const lng = position.coords.longitude;
 
-                    fetch("http://127.0.0.1:8000/location/", {
-                        method: "POST",
-                        headers: {
-                            "Content-Type": "application/json",
-                            "Authorization": "Token " + token
-                        },
-                        body: JSON.stringify(data)
+                document.getElementById("ubicacion").innerText =
+                `Lat: ${lat}, Lng: ${lng}`;
+
+                console.log("Latitud:", lat, "Longitud:", lng);
+
+                // 👇 Enviar al backend Django con fetch
+                fetch("http://127.0.0.1:8000/location/", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "X-CSRFToken": getCookie("csrftoken") // necesario si usas CSRF
+                    },
+                    body: JSON.stringify({
+                        latitude: lat,
+                        longitude: lng
                     })
-                    .then(res => res.json())
-                    .then(resp => {
-                        let html = `<p><b>Ubicación enviada:</b> ${resp.latitude}, ${resp.longitude}</p>`;
-
-                        if (resp.reached_places && resp.reached_places.length > 0) {
-                            html += "<p><b>Lugares alcanzados:</b></p><ul>";
-                            resp.reached_places.forEach(p => {
-                                html += `<li>${p.place} - ${p.distance_m} metros - Pregunta: ${p.question}</li>`;
-                            });
-                            html += "</ul>";
-                        } else {
-                            html += "<p>No has llegado a ningún lugar aún</p>";
-                        }
-
-                        document.getElementById("result").innerHTML = html;
-                    })
-                    .catch(err => {
-                        console.error(err);
-                        alert("Error enviando ubicación");
-                    });
-                },
-                error => {
-                    console.error(error);
-                    alert("No se pudo obtener la ubicación");
-                },
-                { enableHighAccuracy: true }
+                })
+                .then(response => response.json())
+                .then(data => {
+                console.log("Respuesta Django:", data);
+                })
+                .catch(error => {
+                console.error("Error en fetch:", error);
+                });
+            },
+            function(error) {
+                alert("Error al obtener la ubicación: " + error.message);
+            }
             );
-        });
-        boton.addEventListener('click', () => {
-            preguntasDiv.style.display = 'block';
-            listaPreguntas.innerHTML = ""; // Limpiar preguntas previas
-            preguntas.forEach((pregunta, index) => {
-                const li = document.createElement('li');
-                const img = document.createElement('img');
-                img.src = "/static/images/interrogacion.jpg";
-                img.alt = "?";
-                img.style.width = "16px";
-                img.style.height = "16px";
-                img.style.verticalAlign = "middle";
+        } else {
+            alert("Geolocalización no soportada en este navegador.");
+        }
+        };
 
-                li.innerHTML = `${pregunta} `;
-                li.appendChild(img);
-
-                const opcionesDiv = document.createElement('div');
-                opciones[index].forEach((opcion) => {
-                    const label = document.createElement('label');
-                    label.style.display = 'block';
-                    const checkbox = document.createElement('input');
-                    checkbox.type = 'radio';
-                    checkbox.name = `pregunta-${index}`;
-                    checkbox.value = opcion;
-                    label.appendChild(checkbox);
-                    label.appendChild(document.createTextNode(opcion));
-                    opcionesDiv.appendChild(label);
-                });
-
-                const comprobarBtn = document.createElement('button');
-                comprobarBtn.textContent = "Comprobar";
-                comprobarBtn.style.marginTop = "10px";
-                comprobarBtn.addEventListener('click', () => {
-                    const seleccionada = document.querySelector(`input[name="pregunta-${index}"]:checked`);
-                    if (seleccionada) {
-                        if (seleccionada.value === respuestasCorrectas[index]) {
-                            img.src = "/static/images/ok.png";
-                        } else {
-                            img.src = "/static/images/ko.png";
-                        }
-                    } else {
-                        alert("Por favor, selecciona una opción antes de comprobar.");
-                    }
-                });
-
-                li.appendChild(opcionesDiv);
-                li.appendChild(comprobarBtn);
-                listaPreguntas.appendChild(li);
-            });
-        });
+        function getCookie(name) {
+        let cookieValue = null;
+        if (document.cookie && document.cookie !== "") {
+            const cookies = document.cookie.split(";");
+            for (let i = 0; i < cookies.length; i++) {
+                const cookie = cookies[i].trim();
+                if (cookie.substring(0, name.length + 1) === (name + "=")) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+        }        
     </script>
 </body>
 </html>
