@@ -11,6 +11,7 @@ from rest_framework.authentication import TokenAuthentication
 from django.shortcuts import render
 from rest_framework.response import Response
 from street_gamer.utils.tools import read_json_from_file
+import random
 
 
 # Listar todos los lugares (para mostrar retos)
@@ -31,7 +32,7 @@ def map(request):
     m = folium.Map(location=[lat, lng], zoom_start=14)
     folium.Marker([lat, lng], popup=city, tooltip=city).add_to(m)
 
-    # add points
+    # Add points
     for p in points["lugares_interes"]:
         folium.Marker(
             [p["coordenadas"]["latitud"], p["coordenadas"]["longitud"]],
@@ -40,9 +41,23 @@ def map(request):
             icon=folium.Icon(color="red", icon="info-sign")
         ).add_to(m)
 
-    m = m._repr_html_()
-    return render(request, "map.html", {"map": m, "ciudad": city})
+    # Generate questions
+    questions = []
+    for lugar in points["lugares_interes"]:
+        pregunta = lugar["pregunta"]
+        respuesta_correcta = lugar["respuestas"]["respuesta_correcta"]
+        respuestas_incorrectas = lugar["respuestas"]["respuestas_incorrectas"]
+        opciones = [respuesta_correcta] + random.sample(respuestas_incorrectas, 2)
+        random.shuffle(opciones)  # Shuffle options
 
+        questions.append({
+            "pregunta": pregunta,
+            "opciones": opciones,
+            "respuesta_correcta": respuesta_correcta
+        })
+
+    m = m._repr_html_()
+    return render(request, "map.html", {"map": m, "ciudad": city, "questions": questions})
 
 
 def haversine(lat1, lon1, lat2, lon2):

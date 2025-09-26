@@ -1,5 +1,9 @@
 {
     "poblacion": "Zafra",
+    "coordenadas": {
+        "latitud": 38.4258642,
+        "longitud": -6.4162027
+    },
     "lugares_interes": [
         {
             "nombre": "Castillo de Zafra",
