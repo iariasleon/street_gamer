@@ -1,7 +1,7 @@
 # Street Gamer
 
 Scape room by the current city (geolocalization) with relevant sites of interest. 
-This project has been create suin Django.
+This project has been create using Django.
 
 ## Requirements
 ```
