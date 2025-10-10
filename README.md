@@ -5,7 +5,7 @@ This project has been create using Django.
 
 ## Requirements
 ```
-pip install -r requirements.txt
+pip install --upgrade -r requirements.txt
 ```
 
 ## Run project
